@@ -65,7 +65,7 @@
                 L.DomEvent.addListener(this.select, 'change', this._onChange, this);
             }
         },
-        
+
         _onChange: function (e) {
             var selectedItemKey = this.select.options[this.select.selectedIndex].value;
             for (var i = 0; i < this.data.length; i++) {
@@ -82,5 +82,5 @@
         return new L.SelectBox(selectBoxData, options);
     };
 
-    return L.Control.SelectBox;
+    return L.SelectBox;
 });
