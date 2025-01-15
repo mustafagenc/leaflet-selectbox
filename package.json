@@ -4,7 +4,7 @@
   "description": "Leaflet selectbox plugin",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mustafagenc/leaflet-selectbox.git"
+    "url": "git+ssh://git@github.com/mustafagenc/leaflet-selectbox.git"
   },
   "keywords": [
     "leaflet",
