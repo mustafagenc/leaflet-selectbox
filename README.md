@@ -1,7 +1,7 @@
 Leaflet SelectBox
 ============
 
-[![npm version](https://badge.fury.io/js/leaflet-selectbox.svg)](http://badge.fury.io/js/leaflet-selectbox)
+[![npm version](https://badge.fury.io/js/leaflet-selectbox.svg?icon=si%3Anpm)](https://badge.fury.io/js/leaflet-selectbox)
 
 # Install
 ```
