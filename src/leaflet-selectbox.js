@@ -13,7 +13,7 @@
     }
 })(function (L) {
 
-    L.SelectBox = L.Control.extend({
+    L.Control.SelectBox = L.Control.extend({
 
         options: {
             title: 'Select',
@@ -29,17 +29,23 @@
         onAdd: function (map) {
             this.div = L.DomUtil.create('div', 'leaflet-selectbox-container');
             this.select = L.DomUtil.create('select', 'form-control', this.div);
-            var content = '';
 
             if (this.options.title.length > 0) {
-                content += `<option>${this.options.title}</option>`;
-            }
-            for (var i = 0; i < this.data.length; i++) {
-                content += `<option>${this.data[i][this.options.lookupProperty]}</option>`;
+                var optionElement = L.DomUtil.create("option");
+                optionElement.innerHTML = this.options.title;
+                this.select.appendChild(optionElement);
             }
 
-            this.select.innerHTML = content;
+            for (var i = 0; i < this.data.length; i++) {
+                var optionElement = L.DomUtil.create("option");
+                optionElement.innerHTML = this.data[i][this.options.lookupProperty];
+                optionElement.value = this.data[i][this.options.lookupProperty];
+
+                this.select.appendChild(optionElement);
+            }
+
             this.select.onmousedown = L.DomEvent.stopPropagation;
+
             return this.div;
         },
 
@@ -51,6 +57,7 @@
         },
 
         _onChange: function (e) {
+            this.select.options[this.select.selectedIndex].selected = true;
             var selectedItemKey = this.select.options[this.select.selectedIndex].value;
             for (var i = 0; i < this.data.length; i++) {
                 if (this.data[i][this.options.lookupProperty] == selectedItemKey) {
@@ -62,9 +69,9 @@
         }
     });
 
-    L.selectBox = function (selectBoxData, options) {
-        return new L.SelectBox(selectBoxData, options);
+    L.control.selectBox = function (selectBoxData, options) {
+        return new L.Control.SelectBox(selectBoxData, options);
     };
 
-    return L.SelectBox;
+    return L.Control.SelectBox;
 });
