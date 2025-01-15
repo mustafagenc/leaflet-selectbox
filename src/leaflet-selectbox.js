@@ -54,7 +54,7 @@
             var selectedItemKey = this.select.options[this.select.selectedIndex].value;
             for (var i = 0; i < this.data.length; i++) {
                 if (this.data[i][this.options.lookupProperty] == selectedItemKey) {
-                    e.feature = this.data[i];
+                    e.selectedItem = this.data[i];
                     break;
                 }
             }
