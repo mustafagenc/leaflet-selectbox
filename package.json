@@ -1,6 +1,6 @@
 {
   "name": "leaflet-selectbox",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Leaflet selectbox plugin",
   "repository": {
     "type": "git",
@@ -8,7 +8,8 @@
   },
   "keywords": [
     "leaflet",
-    "map"
+    "map",
+    "selectbox"
   ],
   "author": {
     "name": "Mustafa Genc",
