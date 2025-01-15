@@ -1,0 +1,18 @@
+/* 
+ * Leaflet SelectBox v0.0.1 - 2025-01-15 
+ * 
+ * Copyright 2025 Mustafa Genc 
+ * eposta@mustafagenc.info 
+ * https://mustafagenc.info 
+ * 
+ * Licensed under the MIT license. 
+ * 
+ * Demo: 
+ * https://github.com/mustafagenc/leaflet-selectbox#readme 
+ * 
+ * Source: 
+ * git@github.com:mustafagenc/leaflet-selectbox.git 
+ * 
+ */
+
+.leaflet-selectbox-container{display:block}.leaflet-selectbox-container .form-control{width:100%!important;border:1px solid rgba(0,0,0,.2)}

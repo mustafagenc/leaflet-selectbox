@@ -1,0 +1,41 @@
+{
+  "name": "leaflet-selectbox",
+  "version": "0.0.1",
+  "description": "Leaflet control",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mustafagenc/leaflet-selectbox.git"
+  },
+  "keywords": [
+    "leaflet",
+    "map",
+    "control"
+  ],
+  "author": {
+    "name": "Mustafa Genc",
+    "email": "eposta@mustafagenc.info",
+    "url": "https://mustafagenc.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mustafagenc/leaflet-selectbox/issues"
+  },
+  "homepage": "https://github.com/mustafagenc/leaflet-selectbox#readme",
+  "main": "dist/leaflet-selectbox.src.js",
+  "style": "dist/leaflet-selectbox.src.css",
+  "dependencies": {
+    "leaflet": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-cssmin": "^0.7.0",
+    "grunt-contrib-jshint": "^0.7.2",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^0.5.3",
+    "grunt-remove-logging": "^0.2.0",
+    "grunt-todos": "^0.2.0"
+  }
+}
